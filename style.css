@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+   padding:0;
+   margin: 0;
+  }
+  body{
+    font-family: 'Poppins',sans-serif;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+
+  }
+  .nav-links{
+    display: flex;
+    column-gap: 20px;
+
+
+  }
+  .nav-link a{
+    text-decoration: none;
+    color: darkblue;
+
+  }
+  .nav-links a:hover{
+    text-decoration: underline;
+    color: #000;
+  }
+  .manu{
+    display: none;
+  }
+  .side-nav{
+    background-color: #031538;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top:0px;
+    padding: 20px;
+    margin-left: -60%  ;
+    transition: .3s;
+
+  }
+
+  .sidenav-link {
+    margin-bottom: 30px;
+    
+  }
+  .sidenav-link a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  #header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+  }
+  .headerbutton{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border: none;
+    
+
+
+
+  }
+  
+  .headerbutton:active{
+    color: blue;
+    background-color: darkgreen;
+  }
+  .headerbutton:hover{
+    text-decoration: underline;
+  }
+  /*service*/
+  .service{
+    padding: 20px;
+  }
+  .nav-links a:hover{
+    color: aqua;
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease
+
+  }
+  .co{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .cos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  .cos div{
+    background-color: #97a7c0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+
+   
+   }
+   .newarray{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+   }
+   .arraycon{
+    position: relative;
+    flex-basis:20% ;
+   }
+   .arraycon button{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #1d232c;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border: none;
+    border-radius: 10PX;
+    
+
+
+    
+   }
+   .arraycon button:hover{
+      color: rgb(255, 0, 0);
+      background-color: #1d232c
+   }
+   .new{
+    padding: 20px;
+
+   }
+   .news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   }
+   .news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: #97a7c0 solid;
+   }
+   .news button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+   }
+   .fooder{
+    padding: 40px;
+    background-color: #031538;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+
+
+   }
+   .fooder-icon{
+    font-size: 30px;
+    margin-right: 20px;
+    
+
+   }
+   
+  
+  .prodect{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .prodect-search{
+    width: 80%;
+    
+    
+  }
+  .search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .search input{
+    padding: 10px;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+
+  }
+  .prodect-search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  .prodects-box{
+    text-align: center;
+    s
+  }
+  .prodects-box img{
+    
+  }
+  
+      
+
+
+  
+@media screen and (max-width:700px) {
+    .manu{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .headerimage{
+      display: none;
+    }
+    .co{
+      display: none;
+    }
+    .cos{
+      flex-direction: column;
+    }
+    /*prodect section*/
+    
+    
+    
+}
+@media screen and (min-width:700px){
+  .side-nav{
+  
+    display: none;
+ 
+  }
+  
+}
