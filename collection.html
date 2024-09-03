@@ -1,104 +1,78 @@
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<title>nosta</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections - Nosta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
 <body>
-    <!--navbar-->
+    <!-- Navbar -->
     <nav class="navbar">
         <h1>nosta</h1>
         <div class="nav-links">
-            <p class="nav-link"><a href="index.html">Home</a></p>
-            <p class="nav-link"><a href="collection.html">Collections</a></p>
-            <p class="nav-link"><a href="in.html">Contact</a></p>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="collection.html">Collections</a>
+            <a class="nav-link" href="in.html">Contact</a>
         </div>
-        <div class="manu" onclick="shownaw()">
+        <div class="menu" onclick="shownaw()">
             <i class="fa-solid fa-bars"></i>
         </div>
-
     </nav>
-    <div class="side-nav">
-        <p style="text-align: right;" onclick="clousenaw()">
 
+    <!-- Side Navigation -->
+    <div class="side-nav">
+        <p class="close-btn" onclick="clousenaw()">
             <i class="fa-solid fa-xmark" style="color: white;"></i>
         </p>
-
         <div class="sidenav-links">
-            <p class="sidenav-link"><a href="">home</a></p>
-            <p class="sidenav-link"><a href="">collections</a></p>
-            <p class="sidenav-link"><a href="">contact</a></p>
+            <a class="sidenav-link" href="index.html">Home</a>
+            <a class="sidenav-link" href="collection.html">Collections</a>
+            <a class="sidenav-link" href="in.html">Contact</a>
         </div>
     </div>
-    <!--prodect-->
-    <div class="prodect">
-        <div class="search">
-            <input type="text" id="search" placeholder="Search...">
-            <i class="fa-solid fa-magnifying-glass"></i>
+
+    <!-- Collections -->
+    <section class="collections">
+        <h1>Our Collections</h1>
+        <div class="prodect-search">
+            <div class="prodects-box">
+                <img src="image/blackberry.jpeg" alt="Black Shirt">
+                <p>White Shirt</p>
+            </div>
+            <div class="prodects-box">
+                <img src="image/res.webp" alt="Saree">
+                <p>Saree</p>
+            </div>
+            <div class="prodects-box">
+                <img src="image/blackberry.jpeg" alt="Black Shirt">
+                <p>Black Shirt</p>
+            </div>
+            <div class="prodects-box">
+                <img src="image/blackberry.jpeg" alt="White Shirt">
+                <p>White Shirt</p>
+            </div>
         </div>
-        <form class="prodect-search">
-            
-            <div class="prodects-box">
-                <img src="image/blackberry.jpeg" alt="black" height="200px" width="=200px">
-                <p>white shirt</p>
+    </section>
 
-
-            </div>
-            <div class="prodects-box">
-                <img src="image/res.webp" alt="black" height="200px" width="200px">
-                <p>saree</p>
-
-
-            </div>
-            <div class="prodects-box">
-                <img src="image/blackberry.jpeg" alt="black" height="200px" width="200px">
-                <p>black shirt</p>
-
-
-            </div>
-            <div class="prodects-box">
-                <img src="image/blackberry.jpeg" alt="black" height="200px" width="200px">
-                <p>white shirt</p>
-
-
-            </div>
-
-        </form>
-    </div>
-
-
-
-
-
-    </div>
-    <!--fooder-->
-    <div class="fooder">
+    <!-- Footer -->
+    <footer class="fooder">
         <div class="fooder-con">
             <div class="fooder-box1">
-                <h1 class="text">nostra</h1>
+                <h1 class="text">nosta</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, quod.</p>
                 <div class="fooder-icon">
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-twitter"></i>
-
-
-
-
-
-
                 </div>
             </div>
+        </div>
+    </footer>
 
-
-
-
-            <script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
-
-
 </html>
